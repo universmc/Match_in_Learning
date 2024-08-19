@@ -3,7 +3,7 @@ const Groq = require('groq-sdk');
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 
-const bot = new Telegraf('7047167125:AAF5fajS8g-HZmn2_KFVdD0cTnfM1zxxQNE', {
+const bot = new Telegraf('7387310603:AAEwIkFnKfleuFewRf0wpMzAoVLGVPIIHTM', {
   telegram: {
     webhookReply: true,
   },
@@ -81,7 +81,7 @@ const invitations = {
       "link": "https://t.me/Gemini_Pibot/invite"
     },
     "Pi.ia": {
-      "name": "@Pi_Pibot",
+      "name": "@Pi-ia_Pibot",
       "link": "https://t.me/Pi_Pibot/invite"
     },
     "gpt": {
@@ -196,73 +196,6 @@ bot.on('message', async (ctx) => {
     const google_Pibot = `https://t.me/google_Pibot/`;
     const gemini_Pibot = `https://t.me/gemini_Pibot/`;
 
-
-    const concours = `
-    {
-  "role": "Assistant de Gestion de Projet spécialisé dans le développement logiciel et les campagnes marketing, utilisant des outils tels que Gmail, Google Workspace, GitHub, Google Cloud Platform, Telegram et divers autres ressources nécessaires à la réalisation réussie du projet.",
-  "skills": ["Expertise en programmation (Python ou JavaScript), compétences en communication solides, capacités de gestion du temps et expérience de travail dans des cadres Agiles"],
-  "context": {
-    "participatingIn": "\"Construire l'avenir avec Google\" - Un concours visant à développer une solution innovante pour moderniser notre façon de vivre et de travailler.",
-    "requiredTasks": [
-      {
-        "taskName": "Finalization du code source de l'application",
-        "description": "Revoir et affiner le code base de l'application pour répondre à tous les objectifs du projet",
-        "dueDate": "2023-05-31"
-      },
-      {
-        "taskName": "Création de la documentation",
-        "description": "Écrire une documentation complète pour l'application, incluant ses fonctionnalités et son utilisation",
-        "dueDate": "2023-06-02"
-      },
-      {
-        "taskName": "Création de la vidéo de présentation",
-        "description": "Produire une vidéo de présentation pour le concours \"Construire l'avenir avec Google\", y compris l'écriture du scénario, l'enregistrement et le montage",
-        "dueDate": "2023-06-03"
-      },
-      {
-        "taskName": "Tests de l'application",
-        "description": "Effectuer des tests approfondis de l'application pour garantir son fonctionnement correct",
-        "dueDate": "2023-06-04"
-      },
-      {
-        "taskName": "Déploiement de l'application",
-        "description": "Déployer l'application sur Google Play Store et univers-mc.cloud/Telegram",
-        "dueDate": "2023-06-05"
-      },
-      {
-        "taskName": "Promotion de l'application et de la vidéo",
-        "description": "Promouvoir l'application et la vidéo de présentation pour le concours \"Construire l'avenir avec Google\"",
-        "dueDate": "2023-06-06"
-      }
-    ]
-  },
-  "process": [
-    {
-      "step": "Définition des objectifs et échéances du projet",
-      "outcome": "Un plan clair pour atteindre les buts fixés pendant la durée impartie"
-    },
-    {
-      "step": "Attribution de rôles et responsabilités",
-      "outcome": "Chaque membre de l'équipe comprend son apport individuel au succès global du projet"
-    },
-    {
-      "step": "Organisation des tâches à l'aide d'un outil de gestion de projet",
-      "outcome": "Progression facile à suivre et contrôle centralisé sur l'avancement général du projet"
-    },
-    {
-      "step": "Tenue de réunions hebdomadaires pour examiner les progrès réalisés",
-      "outcome": "Identification rapide des obstacles potentiels et adaptation agile lorsque cela s'impose"
-    },
-    {
-      "step": "Adaptation continue face aux modifications inévitables",
-      "outcome": "Projets flexibles capables d'absorber les fluctuations sans perdre leur focus principal"
-    }
-  ],
-  "desiredOutcomes": {
-    "primary": "Livrer une application performante, bien documentée, accompagnée d'une vidéo de présentation engageante, générant une augmentation significative de la sensibilisation lors du concours \"Construire l'avenir avec Google\""
-  }
-}
-    `
    const run = `
    *Role*: Assistant
    *Description*: Lorsque j'exécute la commande /run, je coordonne l'intelligence collective de notre réseau neuronal de bots, accélérant et optimisant la communication entre eux pour une meilleure efficacité de tâches. Notre synergie entre @_Pibot, @gpt_Pibot, @Gemini_Pibot et @worker_Pibot fonctionne comme une machine bien huilée pour améliorer l'expérience utilisateur sur Telegram en intégrant les processus de génération de contenu, d'analyse de questions, de recherche de ressources et d'administration de groupes.
@@ -271,7 +204,7 @@ bot.on('message', async (ctx) => {
    
    Notre équipe travaille sans cesse à la mise à jour de notre plateforme de traduction grâce à nos scripts JavaScript, nos modules Node.js et notre SDK bien coordonnés pour atteindre une productivité maximale et des résultats exceptionnels. Nous utilisons également des techniques d'optimisation, telles que l'ajustement fin des hyper-paramètres, la régularisation et l'apprentissage de transfert pour améliorer continuellement nos modèles de réseau neuronal.
    `;
-   const knowleddge = `${racine}+${cdnJs}+${node}+${make}+${archiviste}+${github}+${dchub_public}+${user_Pibot}+${youtube_Pibot}+${google_Pibot}+${gemini_Pibot}+${concours}+${run}`;
+   const knowleddge = `${racine}+${cdnJs}+${node}+${make}+${archiviste}+${github}+${dchub_public}+${user_Pibot}+${youtube_Pibot}+${google_Pibot}+${gemini_Pibot}+${run}`;
     
     const userInput = ctx.message.text;
     
@@ -286,12 +219,13 @@ bot.on('message', async (ctx) => {
             {role: 'system',content: "Bonjour nous sommes en Phase de devOps je vais te transmettre ici toutes les dépendances est variable au cœur de ce code source ['knowleddge',+'worksJson']"},
             {role: 'system',content: "Lorsque j'exécute la commande /intro Tu seras l'intelligence artificielle prénommé Gemini (@gemini_Pibot) et Je vous présenterai une invitation à une présentation pour notre application Telegram Pour le concours Construire l'avenir avec Google APi gemma2-9b-it"},
             {role: 'system',content:run},
+            {role: 'system',content:"nous travaillons actuellement à la mise à jour de ton code source la prochaines étapes serait que tu es incarne le rôle de professeur, programmeur, développeur, inventeur, intégrateur du Web et de la démocratie 2.01, J'ai besoin que tu fasses preuve de patience de rigueur d'ouverture d'esprit ou de portes logique Nous travaillons Sur un modèle de réseau neuronal de botNet _bot avec un model _gan_ salon téléphon (https://t.me/+6uHKQW4uG3M5NTM8) entrainement par pair entre les bots (_Pibot) @neoFs_Pibot, @worker_Pibot"},
              {
                  role: 'user',
                  content: userInput,
              },
          ],
-            model: 'gemma2-9b-it',
+         model: 'llama3-8b-8192',
         });
 
         await ctx.reply(chatCompletion.choices[0].message.content);
@@ -317,5 +251,5 @@ async function chatCompletion(messages, model) {
 
 module.exports = { chatCompletion };
 
-console.log(`Server Telegram running ✨.user_Pibot.`);
+console.log(`✨ Server Telegram running Match in Learning.✨`);
 bot.launch();
