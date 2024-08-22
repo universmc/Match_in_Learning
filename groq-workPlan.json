@@ -123,7 +123,7 @@
     "integration": ["Revoir les objectifs et les fonctionnalités", "Améliorer la communication avec les utilisateurs"]
   },
   "communication": {
-    "canaux": ["Telegram", "youtube", "meta"],
+    "canaux": ["Telegram", "youtube","google","linkin", "meta"],
     "frequenceReunions": "2x semaine"
   },
   "flexibilite": {

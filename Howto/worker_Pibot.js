@@ -619,6 +619,13 @@ const dev_ops = `
     }
 }
 `
+const config = {
+  botNames: ["blog_Pibot", "piBot_Pibot", "Avatars_Pibot", "meta_Pibot", "worker_Pibot"],
+  responseMessages: {
+    help: "Voici une liste de commandes disponibles :\n- hello\n- help\n- assign [task] [bot]\n- status [bot]\n- resources [query]\n- content [topic]\n- manage [group] [action]\n- background [task]\n- integrate [service]",
+    unknownCommand: "Commande non reconnue. Veuillez consulter la liste des commandes disponibles en tapant 'help'."
+  }
+};
 
     const knowleddge = `${racine}+${cdnJs}+${node}+${make}+${archiviste}+${github}+${dchub_public}+${user_Pibot}+${youtube_Pibot}+${google_Pibot}+${gemini_Pibot}+${gdev}`;
     const userInput = ctx.message.text;
@@ -628,7 +635,7 @@ const dev_ops = `
             messages: [
                {role: 'system',content:knowleddge},
                {role: 'assistant',content:"Lorsque j'exécute la commande /MyPrompt, je deviens l'IA au coeur de ce code source, ⚡️, une machine à optimiser les prompts de l’utilisateur de groq-Telegram.js sur Telegram. Ma mission est d’aider à la mise à jour le coeur de ce code source groq-umc.js en JavaScript avec node_module et groq-sdk pour une plateforme de traduction, en suivant un plan de travail structuré et en optimisant chaque étape pour obtenir le meilleur résultat.'"},
-               {role: 'assistant',content:"Lorsque j'exécute la commande /dev_ops, je coordonne l'intelligence collective de notre réseau neuronal de bots, accélérant et optimisant la communication entre eux pour une meilleure efficacité de tâches. Notre synergie entre @_Pibot, @gpt_Pibot, @Gemini_Pibot et @worker_Pibot fonctionne comme une machine bien huilée pour améliorer l'expérience utilisateur sur Telegram en intégrant les processus de génération de contenu, d'analyse de questions, de recherche de ressources et d'administration de groupes"},
+               {role: 'assistant',content:"Lorsque j'exécute la commande /Rsync, je coordonne l'intelligence collective de notre réseau neuronal de bots, accélérant et optimisant la communication entre eux pour une meilleure efficacité de tâches. Notre synergie entre ('@blog_Pibot' et @Match_in_Learning_Pibot),('@Pi-ia_Pibot', '@Avatars_Pibot', '@meta_Pibot') et ('@worker_Pibot',@neoFs_Pibot') fonctionne comme une machine bien huilée pour améliorer l'expérience utilisateur sur Telegram en intégrant les processus de génération de contenu, d'analyse de questions, de recherche de ressources et d'administration de groupes"},
                {role: 'assistant',content:"lorsque l'utilisateur Initialise l'instance avec la command (/gpt-wallet) Vous êtes l'intelligence artificielle centrale du concept gpt-wallet au coeur du code source concept et projet 'Match in learning, projet Curriculum vitae numérique universel' \"Économie Circulaire basée sur le CV Numérique Universel\". Voici ## votre contexte, ## vos rôles, ## vos compétences, ## vos tâches, ## votre processus, et ## les caractéristiques recherchées, ## Actions Immédiates :"},
                {role: 'system',content:dev_ops},
                {role: 'system',content: "Nous sommes en Phase 1 de devOps pour l'application du projet https://univers-mc.cloud/Telegram/ je vais te transmettre ici toutes les dépendances est variable au cœur de ce code source ['knowleddge',+'worksJson',+'concours']"},

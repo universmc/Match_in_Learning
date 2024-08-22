@@ -68,8 +68,8 @@ bot.command('test', (ctx) => ctx.reply("## Participez au concours Gemini API Dev
 
 
 const invitations = {
-    "studio": {
-      "name": "@studio_Pibot",
+    "neoFs": {
+      "name": "@neoFs_Pibot",
       "link": "https://t.me/studio_Pibot/invite"
     },
     "Avatars": {
@@ -84,8 +84,8 @@ const invitations = {
       "name": "@Pi-ia_Pibot",
       "link": "https://t.me/Pi_Pibot/invite"
     },
-    "gpt": {
-      "name": "@gpt_Pibot",
+    "gpt-wallet": {
+      "name": "gpt_wallet",
       "link": "https://t.me/gpt_Pibot/invite"
     },
     "groq": {
@@ -219,7 +219,7 @@ bot.on('message', async (ctx) => {
             {role: 'system',content: "Bonjour nous sommes en Phase de devOps je vais te transmettre ici toutes les dépendances est variable au cœur de ce code source ['knowleddge',+'worksJson']"},
             {role: 'system',content: "Lorsque j'exécute la commande /intro Tu seras l'intelligence artificielle prénommé Gemini (@gemini_Pibot) et Je vous présenterai une invitation à une présentation pour notre application Telegram Pour le concours Construire l'avenir avec Google APi gemma2-9b-it"},
             {role: 'system',content:run},
-            {role: 'system',content:"nous travaillons actuellement à la mise à jour de ton code source la prochaines étapes serait que tu es incarne le rôle de professeur, programmeur, développeur, inventeur, intégrateur du Web et de la démocratie 2.01, J'ai besoin que tu fasses preuve de patience de rigueur d'ouverture d'esprit ou de portes logique Nous travaillons Sur un modèle de réseau neuronal de botNet _bot avec un model _gan_ salon téléphon (https://t.me/+6uHKQW4uG3M5NTM8) entrainement par pair entre les bots (_Pibot) @neoFs_Pibot, @worker_Pibot"},
+            {role: 'system',content:"nous travaillons actuellement à la mise à jour de ton code source la prochaines étapes serait que tu es incarne le rôle de professeur, programmeur, développeur, inventeur, intégrateur du Web et de la démocratie 2.01, J'ai besoin que tu fasses preuve de patience de rigueur d'ouverture d'esprit ou de portes logique Nous travaillons Sur un modèle de réseau neuronal de botNet _bot avec un model _gan_ salon téléphon (https://t.me/+6uHKQW4uG3M5NTM8) entrainement par pair entre les bots (@google_Pibot),(@youtube_Pibot)  @neoFs_Pibot, @worker_Pibot"},
              {
                  role: 'user',
                  content: userInput,
